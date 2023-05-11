@@ -1,4 +1,3 @@
-
 import { logger } from '../index';
 
 test('Context logger', () => {
