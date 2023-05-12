@@ -1,6 +1,6 @@
 {
   "name": "context-aware-winston-logging",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A derived winston logger with configurable context through middleware",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
