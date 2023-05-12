@@ -1,4 +1,6 @@
 /* tslint:disable */
+import { v4 as uuidv4 } from 'uuid';
+import { IncomingMessage } from 'http';
 const winston = require('winston');
 
 const format = winston.format.combine(
@@ -34,3 +36,15 @@ export const logger = winston.createLogger({
     new winston.transports.Console({ format, handleExceptions: true, handleRejections: true }),
   ],
 });
+
+export function LoggerMiddleware() {
+  return (req: IncomingMessage, res: any, next: () => void) => {
+    logger.context = {
+      url: req.url,
+      correlationId: req.headers['X-Correlation-Id'] || uuidv4(),
+      traceId: req.headers['X-Amzn-Trace-Id'],
+      method: req.method,
+    };
+    next();
+  };
+}
