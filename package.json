@@ -1,7 +1,7 @@
 {
   "type": "module",
-  "name": "context-aware-winston-logging",
-  "version": "1.0.2",
+  "name": "trace-scope",
+  "version": "2.0.0",
   "description": "A derived winston logger with configurable context through middleware",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -22,7 +22,16 @@
     "Context",
     "Logger",
     "Winston",
-    "Middleware"
+    "Middleware",
+    "logging",
+    "distributed-logging",
+    "correlation-id",
+    "trace-id",
+    "async-local-storage",
+    "request-context",
+    "nodejs",
+    "microservices",
+    "observability"
   ],
   "author": "N-U",
   "license": "ISC",
