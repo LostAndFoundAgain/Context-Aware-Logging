@@ -1,4 +1,7 @@
-﻿![npm total downloads](https://img.shields.io/npm/dt/context-aware-winston-logging)
+﻿![npm version](https://img.shields.io/npm/v/context-aware-winston-logging?style=flat-square)
+![weekly downloads](https://img.shields.io/npm/dw/context-aware-winston-logging?style=flat-square)
+![total downloads](https://img.shields.io/npm/dt/context-aware-winston-logging?style=flat-square)
+![license](https://img.shields.io/npm/l/context-aware-winston-logging?style=flat-square)
 
 # Request Context Logger
 
